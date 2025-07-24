@@ -124,6 +124,35 @@
 //     console.log("rishi baweja");
 // });
 
-let fruit = ["apple" , "muhmelelokela" , "dragonfruit"];
-fruit.push("angur");
-fruit.unshift("strawberry"); 
+// let fruit = ["apple" , "muhmelelokela" , "dragonfruit"];
+// fruit.push("angur");
+// fruit.unshift("strawberry"); 
+
+// let h1 = document.querySelector("h1");
+// h1.textContent="oo god";
+
+// let img = document.querySelector("img");
+// img.setAttribute("src" , "https://images.unsplash.com/photo-1752662742861-fb76c71576d7?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+// let p = document.querySelector("p");
+// function dblclick() {
+//     p.style.color="red";
+// }
+// p.addEventListener("dblclick" , dblclick);
+// p.removeEventListener("dblclick" , dblclick);
+
+// let inp = document.querySelector("input");
+// inp.addEventListener("input" , function (dets){
+//     if(dets.data !== null){
+//     console.log(dets.data);
+//     }
+// });
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#Device");
+
+sel.addEventListener("change" , function(dets){
+   // console.log(dets.target.value);
+   device.textContent = `${dets.target.value} Device Selected`;
+})
+
