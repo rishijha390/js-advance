@@ -229,8 +229,22 @@
 //     abcd.style.backgroundColor ="red";
 // });
 
-let abcd = document.querySelector("#abcd");
-window.addEventListener("mousemove" , function(dets){
-    abcd.style.top = dets.clientY + "px";
-    abcd.style.left = dets.clientX + "px";
+// let abcd = document.querySelector("#abcd");
+// window.addEventListener("mousemove" , function(dets){
+//     abcd.style.top = dets.clientY + "px";
+//     abcd.style.left = dets.clientX + "px";
+// });
+
+// let abcd = document.querySelector("#abcd");
+// abcd.addEventListener("click",function(dets){
+//     console.log(dets);
+// });
+// let nav = document.querySelector("#nav").addEventListener("click",function(){
+//     alert("clicked");
+// })
+let ul=document.querySelector("ul");
+ul.addEventListener("click",function(dets){
+   // dets.target.style.textDecoration = "line-through";
+   //dets.target.classList.add("lt");
+    dets.target.classList.toggle("lt");
 });
